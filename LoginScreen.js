@@ -82,6 +82,7 @@ export default class LoginScreen extends Component {
         console.log(JSON.stringify(error));
         const errorMessage = JSON.stringify(error.data.errors.email);
         console.log(errorMessage);
+        alert(errorMessage);
       });
   }
   render() {
